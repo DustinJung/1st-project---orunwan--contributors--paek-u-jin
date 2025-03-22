@@ -1,0 +1,35 @@
+.eachMemColContents1_subdiv > span{
+    color: #555454;
+    display: inline-block;
+    margin: 20px 0 20px 20px;
+    font-size: 19px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+    width: 480px;
+    font-weight: bold;
+}
+
+.eachMemColContents1_subdiv{
+    display: inline-block;
+    height: 267.27px;
+    
+    
+}
+.eachMemColContents1_subdiv > ul{
+    text-align: left;
+    margin: 20px 0 20px 20px;
+    
+}
+.eachMemColContents1_subdiv > ul > li{
+    display: inline-block;
+    margin: 0 0 20px 0;
+}
+.eachMemColContents1_subdiv > ul > li > span{
+    padding: 7px;
+    background: rgba(178, 173, 238, 0.2);
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}

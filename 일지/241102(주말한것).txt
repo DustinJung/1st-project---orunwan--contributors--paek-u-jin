@@ -1,0 +1,139 @@
+백유진
+
+기획서(ppt)를 진행
+오런완 기획보고서 메인. 로고스토리 .메인 컬러. 오런완탄생스토리.이미지맵.타 사이트 분석.서체이야기 .오런완의 여정
+우리 이미지맵에서 키워드 중에서 열정.질서.속도.명상.에너지.러닝메이트.러닝.
+
+
+
+
+
+정명기
+
+[wrap2]
+> 윗마진 삭제[배너 붙여버리기 천장에]
+> 오른 마진 50px로 변경 원래 70
+> width 를 80%로 변경
+> 밑 마진 추가.
+
+[col2]
+> width를 440px에서 28%로 변경 오픈하는 모니터 해상도마다 크기변화를 막기 위함임
+
+[tap6wrap] 
+메일링 콘텐츠 추가!
+특히 checkbox 누르면 숨겨둔 div로 개인정보수집 같은게 뭔지 약관을 써놈!
+
+
+[ .tap1wrap, .tap2wrap, .tap3wrap, .tap4wrap, .tap5wrap, .tap6wrap(오늘추가) ]
+> width를 438px > 100%로 바꿈.
+> 이 col 안에 있는 모든 img의 width값을 438로 정해놨었는데, 모두 100%로 변경.
+> 그에 따른 전체적인 margin을 수정.
+
+[float1]
+> float1의 h2 margin을 80> 40으로, tab2의 margin을 250에서 190으로 변경
+
+[float2]
+> float2의 .button의 left 값을 70에서 40으로 수정, tab1의 left값도 70>40으로 수정
+> label의 margin-right 5px > 30px로 변경 해서 간격 좀 넓힘.
+> 그 외 자잘한 것들 수정
+
+[float5]
+반 쪼갠거를 hover했을 때 정보를 주는 background가 바뀌는 쪽으로 구상 확정.
+
+
+[float6]
+> h3 왼쪽 마진 반감.
+> float6button의 윗 마진 2배 증가. 왼쪽 마진 반감.
+> ul 또한 왼쪽 마진 반감.
+
+
+[footer]
+패딩을 줘서 푸터컨텐츠 위치 조정
+
+------------------------
+
+float5를 하나의 div에서 반 반 쪼개 두개의 div로 vs 컨텐츠를 만들려 했는데,
+
+이미지를 너무 딱 맞게 만들면 4k나 qhd 해상도에서 켰을 때 보더가 넓어질수도 있는 문제가 있음.
+
+너무 딱 맞추지 말고, 전체적으로 크기를 키워보자.
+
+-----------------------------
+
+뉴스레터 참고한 것
+
+디브
+폼태그
+	필드셋 
+ 	레이블 (레이블 안에다 span으로 *)
+ 	인풋-이메일 / 리콰이어드 넣고 플레이스 홀더 넣음 될듯, 타입도 이메일로 주고. 사이즈 정해주면 될듯? textsize랑.
+	필드셋
+	
+	디브>레이블>
+	인풋 체크박스 ,
+
+
+폼태그
+디브
+
+---------------------
+
+ <div id="float2">
+
+                        <!-- <h2>크루원 구해요</h2> -->
+                        <input type="radio" name="tabs" id="first" checked>
+                        <input type="radio" name="tabs" id="second">
+
+                        <div class="button">
+                            <label for="first">크루원 구해요</label>
+                            <label for="second">크루 구해요</label>
+                        </div>
+
+                        <ul class="tab1">
+                            <li class="tab1sub1">
+                                <a href="#">
+                                    <div class="thumbnail1">
+                                        <img src="images/gurocityboys.png">
+                                    </div>
+                                    <div>
+                                        <p>구로씨리보이즈에서 크루원 구합니다<br>
+                                            지역:구로(도림천~한강)<br>
+                                            남녀혼성 10~15km 초보가능</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+#float2 input{
+    display: none;
+}
+
+#float2 input#first~ul.tab1:nth-of-type(1){
+    display: none;
+}
+#float2 input#first:checked~ul.tab1:nth-of-type(1){
+    display: block;
+}
+
+#float2 input#second~ul.tab1:nth-of-type(2){
+    display: none;
+}
+#float2 input#second:checked~ul.tab1:nth-of-type(2){
+    display: block;
+}
+#float2 .button label{
+    display: inline-block;
+    padding: 15px 15px;
+    color: black;
+    border: 1px solid #fcfcfce5;
+    background: rgb(234, 234, 224);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px 30px 0 5px;
+}
+#float2 input#first:checked~.button>label:nth-of-type(1),
+#float2 input#second:checked~.button>label:nth-of-type(2){
+    color: rgb(245, 52, 129);
+    /* border-radius: 20px; */
+    /* background: lightblue; */

@@ -1,0 +1,72 @@
+11월 15일에 능력단위시험
+
+사실상 다음주까지.
+
+ui 디자인, 기획보고서 끝내기
+
+메인컨텐츠 틀 끝내기
+
+ui디자인이란 > 사용자가 제품을 어떤 방식으로 이용하도록 만드느냐를 디자인 하는 것
+
+기획보고서 > ppt 끝내기
+
+8일 기획 끝내기
+
+11월 14일 기획 > 메인 로그인 서브 모든 디자인과 기획 끝내기
+
+
+#float2{
+    /* width: 1198px; */
+    height: 500px;
+    position:relative;
+    box-sizing: border-box;
+    
+    margin-bottom: 30px;
+}
+
+#float2 input{
+    display: none;
+}
+
+#float2 input#first~ul.tab1:nth-of-type(1){
+    display: none;
+}
+#float2 input#first:checked~ul.tab1:nth-of-type(1){
+    display: block;
+}
+
+#float2 input#second~ul.tab1:nth-of-type(2){
+    display: none;
+}
+#float2 input#second:checked~ul.tab1:nth-of-type(2){
+    display: block;
+}
+#float2 .button label{
+    display: inline-block;
+    padding: 15px 15px;
+    color: black;
+    border: 1px solid #fcfcfce5;
+    background: rgb(234, 234, 224);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px 5px 0;
+}
+#float2 input#first:checked~.button>label:nth-of-type(1),
+#float2 input#second:checked~.button>label:nth-of-type(2){
+    color: rgb(245, 52, 129);
+    /* border-radius: 20px; */
+    /* background: lightblue; */
+}
+#float2 .button{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    
+}
+#float2 p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+    word-break: break-all;
+}
